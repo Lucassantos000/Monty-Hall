@@ -1,0 +1,134 @@
+
+.wrapping{
+    display: flex;
+    width: auto;
+    height: auto;
+
+    width: 85vw;
+    height: 50vw;
+
+    margin: 20px auto 10px auto;
+    
+}
+
+.info{
+    display: flex;
+    width: 15%;
+    
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.mostrador{
+    width: 100%;
+    height: auto;
+    border: 1px solid rebeccapurple;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin: 5px;
+    z-index: 10;
+}
+
+
+
+.fundo{
+    display: flex;
+    background-image: url('../img/palco.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    
+   
+}
+
+.apresentador{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+
+}
+
+.img-apresentador{
+    top: 73%;
+    position: sticky;
+    left: 20%;
+    height: 50%;
+}
+.apresentador:hover .comentario{
+   opacity: 1;
+   border-top-left-radius:20px ;
+   border-top-right-radius:20px ;
+   border-bottom-right-radius:20px ;
+}
+
+.comentario{
+    opacity: 0;
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid rgba(112, 137, 211, 0.63);
+    padding: 5px;
+    top: -100px;
+    position: relative;
+}
+.comentario p{
+    padding: 0;
+    margin: 0;
+}
+
+.portas{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.div-portas1, .div-portas2, .div-portas3 {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 45%;
+    flex-direction: column;
+}
+.span-portas1, .span-portas2, .span-portas3{
+    opacity: 0;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#p1, #p2, #p3{
+      height: 100%;
+
+    /*margin: auto auto;*/
+}
+
+.div-portas1:hover .span-portas1{
+    opacity: 1;
+}
+
+.div-portas2:hover .span-portas2{
+    opacity: 1;
+}
+
+.div-portas3:hover .span-portas3{
+    opacity: 1;
+}
+
+
+.texto{
+    top: 40%;
+    position: sticky;
+    text-align: center;
+
+}
