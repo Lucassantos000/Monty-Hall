@@ -75,9 +75,9 @@ function verifica_ganhador(elemento, id){
 
             for(let i = 0; i < vetor_porta.length; i++){
                 if(vetor_porta[i].alt === 'porta' && i != id+1){
-                        vetor_porta[i].src = 'http://localhost:5500/img/porta_cabra.png'
+                        vetor_porta[i].src = './img/porta_cabra.png'
                 }else if(i != 0){
-                    vetor_porta[i].src = 'http://localhost:5500/img/porta_tesouro.png'
+                    vetor_porta[i].src = './img/porta_tesouro.png'
                 }
             }
             tentativa++;
@@ -95,10 +95,10 @@ function verifica_ganhador(elemento, id){
 
             for(let i = 0; i < vetor_porta.length; i++){
                 if(vetor_porta[i].alt === 'porta' && i == ouro+1){
-                        vetor_porta[i].src = 'http://localhost:5500/img/porta_tesouro.png'
+                        vetor_porta[i].src = './img/porta_tesouro.png'
                 }else if(i 
                     != 0){
-                    vetor_porta[i].src = 'http://localhost:5500/img/porta_cabra.png'
+                    vetor_porta[i].src = './img/porta_cabra.png'
                 }
             }
     }
